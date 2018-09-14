@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Braucam skriet kopā</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body>
+    <nav>
+        <a class="home" href="../main.html">BRAUCAM SKRIET KOPĀ</a>
+        <a href="http://www.noskrien.lv/kalendars/" target="_blank">KALENDĀRS</a>
+        <a class="myBtn">PIEVIENOT BRAUCIENU</a>
+        <a class="Button">MEKLĒT BRAUCIENU</a>
+    </nav>
+
+    <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modalheader">
+                    <span class="close">&times;</span>
+                    <h3>Jauns brauciens</h3>
+                </div>
+                <div class="modalbody">
+                    <div class="kasesmu">
+                        <div class="esmu">Esmu</div>
+                        <div class="sof-pas">
+                            <div class="radio-group">
+                                <input type="radio" id="driver" name="sof-pas">
+                                <label for="driver">Šoferis</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="passenger" name="sof-pas">
+                                <label for="passenger">Pasažieris</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jaunsbrauciens">
+                        <div>Skriešu</div>
+                        <select>
+                            <option value="">-Izvēlies pasākumu-</option>
+                            <option value="buks">Stirnu buks Gaiziņkalns</option>
+                            <option value="bigbank">Skrien Latvija Valmiera</option>
+                            <option value="noskrien">Noskrien ziemu Priekuļi</option>
+                        </select><br>
+                        <label for="place">Izbraukšanas vieta</label>
+                        <input type="text" id="place">
+                        <label for="time">Izbraukšanas laiks</label>
+                        <input type="text" id="time">
+                        <label for="phone">Telefons</label>
+                        <input type="text" value="+371" id="phone">
+                        <label for="notes">Piezīmes</label>
+                        <input type="text" id="notes">
+                        <button class="submit-form">Izveidot braucienu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="Modalis" class="modal">
+            <div class="modal-content">
+                <div class="modalheader">
+                    <span class="close2">&times;</span>
+                    <h3>Meklēt braucienu</h3>
+                </div>
+                <div class="modalbody">
+                    <div class="kasesmu">
+                        <div class="esmu">Esmu</div>
+                        <div class="sof-pas">
+                            <div class="radio-group">
+                                <input type="radio" id="driver" name="sof-pas">
+                                <label for="driver">Šoferis</label>
+                            </div>
+                            <div class="radio-group">
+                                <input type="radio" id="passenger" name="sof-pas">
+                                <label for="passenger">Pasažieris</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jaunsbrauciens">
+                        <div>Skriešu</div>
+                        <select>
+                            <option value="">-Izvēlies pasākumu-</option>
+                            <option value="buks">Stirnu buks Gaiziņkalns</option>
+                            <option value="bigbank">Skrien Latvija Valmiera</option>
+                            <option value="noskrien">Noskrien ziemu Priekuļi</option>
+                        </select><br>
+                        <label for="place">Izbraukšanas vieta</label>
+                        <input type="text" id="place">
+                        <button class="submit-form">Meklēt braucienu</button>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    <div class="container">
+        <div class="karuselis">
+            <div class="slaids pareja">
+                <div class="image" style="background-image: url(1.jpg)">
+
+                </div>
+            </div>
+            <div class="slaids pareja">
+                <div class="image" style="background-image: url(2.jpg)">
+                </div>
+            </div>
+            <div class="slaids pareja">
+                <div class="image" style="background-image: url(3.jpg)">
+                </div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="column">
+                    <div class="img demo cursor" style="background-image: url(1.jpg)" onclick="currentSlide(1)"></div>
+                </div>
+                <div class="column">
+                    <div class="img demo cursor" style="background-image: url(2.jpg)" onclick="currentSlide(2)"></div>
+                </div>
+                <div class="column">
+                    <div class="img demo cursor" style="background-image: url(3.jpg)" onclick="currentSlide(3)"></div>
+                </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

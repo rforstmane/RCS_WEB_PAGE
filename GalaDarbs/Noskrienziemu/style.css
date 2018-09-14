@@ -1,0 +1,453 @@
+* {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+
+}
+
+.container {
+    max-width: 760px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+.home{
+    background-color: black;
+}
+
+nav {
+    background-color: rgb(59, 55, 55); 
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align:  center;
+    margin-bottom: 10px;
+    z-index: 1;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(206, 223, 218);
+    align-self: stretch;
+    padding: 4px;
+    flex: 1 1 50%;
+    transition: .2s linear;
+}
+
+.myBtn, .Button {
+    cursor: pointer;
+}
+nav a:hover{
+    background-color: rgb(206, 223, 218);
+    color: black;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    width: 40%;
+}
+
+.modalheader{
+    text-align: center;
+}
+
+.modalbody {
+    max-width: 350px;
+    margin: 20px auto 40px;
+}
+
+h3{
+    margin: 0;
+    background-color: rgb(231, 231, 231);
+    padding: 5px;
+}
+
+.close, .close2 {
+    color: black;
+    float: right;
+    font-weight: bold;
+    padding: 5px;
+}
+
+input[type="text"], select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    margin-top: 5px;
+}
+
+button{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+button:last-child {
+    margin-top: 10px;
+
+    font-weight: bold;
+}
+
+button:last-child:hover {
+    background-color: rgb(196, 202, 200)
+}
+.close:hover,
+.close:focus, 
+.close2:hover,
+.close2:focus{
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+main{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.slaids{
+    display: none;
+}
+
+.column .img {
+    width: 100%;
+    background-size: contain;
+    padding-bottom: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.karuselis{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.prev, .next{
+    cursor: pointer; /* kursors pārvēršas bultā*/
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color:rgb(206, 223, 218);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color:rgb(59, 55, 55);
+}
+
+.image{
+    width: 100%;
+    background-size: contain;
+    padding-bottom: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pareja{
+    animation-name: fade;
+    animation-duration: 1.5s;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+}
+
+.column {
+    margin-top: 50px;
+    width: calc(100%/3);
+    float: left;
+    margin-bottom: 50px;
+    
+}
+
+.cursor {
+    cursor: pointer;
+}
+.pasakums{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(59, 55, 55);   
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.datums{
+    padding: 5px;
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.vieta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    flex: 1 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+
+.profils{
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(59, 55, 55);   
+    margin-bottom: 12px;
+}
+
+.profils:last-child {
+    margin-bottom: 0;
+}
+
+.soferis{
+    font-weight: bold; 
+    text-align: center;
+    border-bottom: 1px solid;
+    padding: 5px;
+}
+
+.lietotajs{
+    margin-bottom: 10px;
+    display: flex;
+    border-bottom: 1px solid;
+    padding: 5px;
+}
+.lietotajs img{
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.vardspiet{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.profils a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.skriesanaspasakums{
+    padding: 5px;
+    text-align: center;
+}
+
+.starts{
+    text-align: center;
+    padding: 5px;
+}
+footer{
+    text-align: center;
+    background-color: rgb(59, 55, 55);
+
+    padding: 16px 0;
+    color: antiquewhite;
+}
+
+footer h2 {
+    font-size: 16px;
+}
+
+.sof-pas {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.radio-group {
+    display:  flex;
+}
+
+.radio-group label {
+    cursor: pointer;
+}
+.kasesmu {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.esmu {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.jaunsbrauciens {
+    margin: 0 auto;
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.submit-form {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 40px;
+}
+
+.visasgalerija img{
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+    padding: 5px;
+    
+    
+}
+
+.visasgalerija h4 {
+    padding: 5px;
+}
+.galerija {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border-color: rgb(59, 55, 55);   
+    margin-bottom: 12px; 
+}
+
+/* @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+} */
+
+/* @media (max-width: 550px) {
+    
+    .pasakums {
+        flex-direction: column
+    }
+
+} */
+
+@media (min-width: 550px)  {
+    nav {
+        background-color: rgb(59, 55, 55); 
+        position: fixed;
+        top: 0;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        margin-bottom: 0;
+    }
+    
+    nav a{
+    
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(184, 164, 164);
+        padding: 15px;
+        align-self: stretch;
+        flex: 1 1 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        margin-top: 80px;
+    }
+
+    footer h2 {
+        font-size: 24px;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+
+    .pasakumi{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        margin-bottom: 16px;
+    }
+
+
+    .visiprofili {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        margin-bottom: 16px;
+
+        
+    }
+    .profils {
+        margin-bottom: 0;
+    }
+
+    .visasgalerija {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        margin-bottom: 16px;
+        
+        
+    }
+
+
+}

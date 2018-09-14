@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Braucam skriet kopā</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a class="home" href="main.html">BRAUCAM SKRIET KOPĀ</a>
+        <a href="http://www.noskrien.lv/kalendars/" target="_blank">KALENDĀRS</a>
+        <a class="myBtn">PIEVIENOT BRAUCIENU</a>
+        <a class="Button">MEKLĒT BRAUCIENU</a>
+    </nav>
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modalheader">
+                <span class="close">&times;</span>
+                <h3>Jauns brauciens</h3>
+            </div>
+            <div class="modalbody">
+                <div class="kasesmu">
+                    <div class="esmu">Esmu</div>
+                    <div class="sof-pas">
+                        <div class="radio-group">
+                            <input type="radio" id="driver" name="sof-pas">
+                            <label for="driver">Šoferis</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="passenger" name="sof-pas">
+                            <label for="passenger">Pasažieris</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="jaunsbrauciens">
+                    <div>Skriešu</div>
+                    <select>
+                        <option value="">-Izvēlies pasākumu-</option>
+                        <option value="buks">Stirnu buks Gaiziņkalns</option>
+                        <option value="bigbank">Skrien Latvija Valmiera</option>
+                        <option value="noskrien">Noskrien ziemu Priekuļi</option>
+                    </select><br>
+                    <label for="place">Izbraukšanas vieta</label>
+                    <input type="text" id="place">
+                    <label for="time">Izbraukšanas laiks</label>
+                    <input type="text" id="time">
+                    <label for="phone">Telefons</label>
+                    <input type="text" value="+371" id="phone">
+                    <label for="notes">Piezīmes</label>
+                    <input type="text" id="notes">
+                    <button class="submit-form">Izveidot braucienu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="Modalis" class="modal">
+        <div class="modal-content">
+            <div class="modalheader">
+                <span class="close2">&times;</span>
+                <h3>Meklēt braucienu</h3>
+            </div>
+            <div class="modalbody">
+                <div class="kasesmu">
+                    <div class="esmu">Esmu</div>
+                    <div class="sof-pas">
+                        <div class="radio-group">
+                            <input type="radio" id="driver" name="sof-pas">
+                            <label for="driver">Šoferis</label>
+                        </div>
+                        <div class="radio-group">
+                            <input type="radio" id="passenger" name="sof-pas">
+                            <label for="passenger">Pasažieris</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="jaunsbrauciens">
+                    <div>Skriešu</div>
+                    <select>
+                        <option value="">-Izvēlies pasākumu-</option>
+                        <option value="buks">Stirnu buks Gaiziņkalns</option>
+                        <option value="bigbank">Skrien Latvija Valmiera</option>
+                        <option value="noskrien">Noskrien ziemu Priekuļi</option>
+                    </select><br>
+                    <label for="place">Izbraukšanas vieta</label>
+                    <input type="text" id="place">
+                    <button class="submit-form">Meklēt braucienu</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="container">
+        <main>
+
+
+
+            <div class="karuselis">
+                <div class="slaids pareja">
+                    <div class="image" style="background-image: url(Karuselis/Stirnubuks.jpg)">
+
+                    </div>
+                </div>
+                <div class="slaids pareja">
+                    <div class="image" style="background-image: url(Karuselis/Skrien.jpg)">
+                    </div>
+                </div>
+                <div class="slaids pareja">
+                    <div class="image" style="background-image: url(Karuselis/Ziema.jpg)">
+                    </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="visipunkti">
+                    <span class="punkts" onclick="currentSlide(1)"></span>
+                    <span class="punkts" onclick="currentSlide(2)"></span>
+                    <span class="punkts" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+            <div class="atstarpe">
+                <img src="redline.jpg">
+                <p>NEAIZSKRIEN GARĀM</p>
+            </div>
+
+            <div class="pasakumi">
+                <a href="https://www.stirnubuks.lv/buks/gaizinkalna-stirnu-buks-2018/" target="_blank">
+                    <div class="pasakums">
+                        <div class="pasakumabilde" style="background-image: url(Bukagalerija/1.jpg)"></div>
+                        <div class="pasakumaapraksts">
+                            <div class="datums">
+                                <div class="menesis">SEP</div>
+                                <div class="cipars">08.</div>
+                            </div>
+                            <div class="vieta">
+                                <div class="kadspasakums">STIRNU BUKS Gaiziņš</div>
+                                <div class="kurpasakums">Sestdiena, 8.septembris </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://bigbankskrienlatvija.lv/lv/registrejies-lv/" target="_blanK">
+                    <div class="pasakums">
+                        <div class="pasakumabilde" style="background-image: url(Skrienlatvija/1.jpg)"></div>
+                        <div class="pasakumaapraksts">
+                            <div class="datums">
+                                <div class="menesis">SEP</div>
+                                <div class="cipars">16.</div>
+                            </div>
+                            <div class="vieta">
+                                <div class="kadspasakums">SKRIEN LATVIJA Valmiera</div>
+                                <div class="kurpasakums">Svētdiena, 16.septembris</div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="http://www.noskrienziemu.lv/nolikums/1-posms/" target="_blank">
+                    <div class="pasakums">
+                        <div class="pasakumabilde" style="background-image: url(Noskrienziemu/3.jpg)"></div>
+                        <div class="pasakumaapraksts">
+                            <div class="datums">
+                                <div class="menesis">DEC</div>
+                                <div class="cipars">16.</div>
+                            </div>
+                            <div class="vieta">
+                                <div class="kadspasakums">NOSKRIEN ZIEMU Priekuļi</div>
+                                <div class="kurpasakums">Svētdiena, 16.decembris</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="atstarpe">
+                <img src="redline.jpg">
+                <p>SAMEKLĒ SAVU BRAUCIENU</p>
+            </div>
+
+            <div class="visiprofili">
+                <div class="profils">
+                    <div class="lietotajs">
+                        <div class="soferis">ŠOFERIS</div>
+                        <div class="pasakumabilde" style="background-image: url(Lietotājs/cilveks1.jpg)"></div>
+                        <div class="vards">Renda Forstmane</div>
+
+                    </div>
+                    <div class="info">
+                        <div class="skriesanaspasakums">STIRNU BUKS Gaiziņš</div>
+                        <div class="starts">9:00 Rīga</div>
+                    </div>
+                </div>
+
+                <div class="profils">
+                    <div class="lietotajs">
+                        <div class="soferis">PASAŽIERIS</div>
+                        <div class="pasakumabilde" style="background-image: url(Lietotājs/cilveks3.jpg)"></div>
+                        <div class="vards">Jānis Zaķis</div>
+                    </div>
+                    <div class="info">
+                        <div class="skriesanaspasakums">NOSKRIEN ZIEMU Priekuļi</div>
+                        <div class="starts">Jelgava</div>
+                    </div>
+                </div>
+
+                <div class="profils">
+                    <div class="lietotajs">
+                        <div class="soferis">PASAŽIERIS</div>
+                        <div class="pasakumabilde" style="background-image: url(Lietotājs/cilveks2.jpg)"></div>
+                        <div class="vards">Jānis Skrējējs</div>
+                    </div>
+                    <div class="info">
+                        <div class="skriesanaspasakums">SKRIEN LATVIJA Valmiera</div>
+                        <div class="starts">Rīga</div>
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+    <div class="atstarpe">
+        <img src="redline.jpg">
+        <p>GALERIJAS</p>
+    </div>
+
+
+    <div class="container">
+        <div class="visasgalerija">
+            <div class="galerija">
+                <a href="Bukagalerija/index.html"><img src="Karuselis/Stirnubuks.jpg"></a>
+
+            </div>
+            <div class="galerija">
+                <a href="Skrienlatvija/index.html"><img src="Karuselis/Skrien.jpg"></a>
+
+            </div>
+            <div class="galerija">
+                <a href="Noskrienziemu/index.html"><img src="Karuselis/Ziema.jpg"></a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="atstarpe">
+            <img src="redline.jpg">
+            
+        </div>
+
+    <div id="ajax-result">
+
+    </div>
+
+    </main>
+    </div>
+
+
+    <footer>
+        <h2>NEREDZI SAVU SKRIEŠANAS PASĀKUMU?</h2>
+        <h2>RAKSTI MUMS!</h2>
+        <h2>info@braucamskrietkopa.lv</h2>
+    </footer>
+    <script src="main.js"></script>
+    <script type="text/javascript"></script>
+
+</body>
+
+</html>
